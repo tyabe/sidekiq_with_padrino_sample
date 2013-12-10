@@ -1,0 +1,9 @@
+---
+:orm: minirecord
+:test: rspec
+:mock: none
+:script: none
+:renderer: slim
+:stylesheet: none
+:namespace: SidekiqWithPadrinoSample
+:migration_format: number
