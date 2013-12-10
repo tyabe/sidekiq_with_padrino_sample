@@ -12,9 +12,11 @@ source 'https://rubygems.org'
 
 # Project requirements
 gem 'rake'
+gem 'sidekiq'
 
 # Component requirements
 gem 'slim'
+gem 'activesupport', '>= 3.2', '< 4.0'
 gem 'mini_record'
 gem 'sqlite3'
 
