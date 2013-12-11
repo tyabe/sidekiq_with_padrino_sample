@@ -42,6 +42,7 @@ end
 #
 Padrino.after_load do
   ActiveRecord::Base.auto_upgrade!
+  ActiveRecord::Base.send(:include, Sidekiq::Extensions::ActiveRecord)
 end
 
 Padrino.load!
