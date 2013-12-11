@@ -34,3 +34,6 @@ end
 
 # Mounts the core application for this project
 Padrino.mount('SidekiqWithPadrinoSample::App', :app_file => Padrino.root('app/app.rb')).to('/')
+
+# Mount the Sidekiq monitoring application
+Padrino.mount('Sidekiq::Web', app_class: 'Sidekiq::Web', app_root: Sidekiq::Web.root).to('/sidekiq')
