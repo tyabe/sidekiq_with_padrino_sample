@@ -14,4 +14,9 @@ SidekiqWithPadrinoSample::App.controllers :sample, map: '/' do
     'enqueued'
   end
 
+  get :email do
+    SidekiqWithPadrinoSample::App.delay_for(10.seconds).deliver(:notifier, :greeting, Time.now)
+    'enqueued'
+  end
+
 end
