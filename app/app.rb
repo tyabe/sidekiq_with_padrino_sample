@@ -7,6 +7,8 @@ module SidekiqWithPadrinoSample
 
     enable :sessions
 
+    set :delivery_method, :test
+
     ##
     # Caching support.
     #
