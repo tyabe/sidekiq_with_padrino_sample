@@ -12,6 +12,8 @@ Bundler.require(:default, PADRINO_ENV)
 #
 # Padrino::Logger::Config[:development][:log_level]  = :devel
 # Padrino::Logger::Config[:development][:log_static] = true
+Sidekiq.logger = Padrino.logger
+
 #
 # ## Configure your I18n
 #
