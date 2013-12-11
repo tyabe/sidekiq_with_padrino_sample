@@ -8,4 +8,10 @@ SidekiqWithPadrinoSample::App.controllers :sample, map: '/' do
     end
   end
 
+  get :delayed_post do
+    post  = Post.where(title: 'First post', body: "body").first_or_create
+    post.delay.long_method
+    'enqueued'
+  end
+
 end
