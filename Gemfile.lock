@@ -77,6 +77,9 @@ GEM
     rspec-expectations (2.14.4)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.4)
+    rspec-sidekiq (0.5.1)
+      rspec (~> 2.0)
+      sidekiq (>= 2.4.0)
     sidekiq (2.17.0)
       celluloid (>= 0.15.2)
       connection_pool (>= 1.0.0)
@@ -112,6 +115,7 @@ DEPENDENCIES
   rack-test
   rake
   rspec
+  rspec-sidekiq
   sidekiq
   slim
   sqlite3

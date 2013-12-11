@@ -23,6 +23,7 @@ gem 'sqlite3'
 # Test requirements
 gem 'rspec', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
+gem 'rspec-sidekiq', :group => 'test'
 
 # Padrino Stable Gem
 gem 'padrino', '0.11.4'
